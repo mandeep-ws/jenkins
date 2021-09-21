@@ -1,0 +1,43 @@
+deployments:
+  - deploymentName: config-server
+    sourceImage: docker.artifactory.bank.onefiserv.net/banksol/banksol-cloudconfig:1.0.0-20210311134746
+    targetImage: registry.fiservapps.com/ufs/abiliti/banksol-cloudconfig:1.0.0-20210311134746
+  - deploymentName: ui
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-abiliti-ui:2021.3.6-20210713164245
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-abiliti-ui:2021.3.6-20210713164245
+  - deploymentName: api-personal
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-abiliti-api-personal:2021.3.5-20210713155128
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-abiliti-api-personal:2021.3.5-20210713155128
+  - deploymentName: api-business
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-abiliti-api-business:2021.3.5-20210709204105
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-abiliti-api-business:2021.3.5-20210709204105
+  - deploymentName: idp
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-idp:2021.3.5-20210713160241
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-idp:2021.3.5-20210713160241
+  - deploymentName: api-activity-logger
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-xal-kafka-producer-api:2.0.2-20210412231945
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-xal-kafka-producer-api:2.0.2-20210412231945
+  - deploymentName: idp-admin
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-idp-admin:2021.3.6-20210713192702
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-idp-admin:2021.3.6-20210713192702
+  - deploymentName: api-accounts
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-abiliti-api-accounts:2021.3.3-20210607171054
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-abiliti-api-accounts:2021.3.3-20210607171054
+  - deploymentName: api-images
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-abiliti-api-images:1.1.9-20210420105218
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-abiliti-api-images:1.1.9-20210420105218
+  - deploymentName: api-checkfree
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-checkfreeapi:1.7.3-20210330113825
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-checkfreeapi:1.7.3-20210330113825
+  - deploymentName: api-users
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-abiliti-api-users:1.0.1-20210606231545
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-abiliti-api-users:1.0.1-20210606231545
+  - deploymentName: api-documents
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-abiliti-api-documents:1.0.2-20210429113247
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-abiliti-api-documents:1.0.2-20210429113247
+  - deploymentName: api-user-maintenance
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-accessmanager-api-usermaintenance:1.0.0-20210226103300
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-accessmanager-api-usermaintenance:1.0.0-20210226103300
+  - deploymentName: api-ach
+    sourceImage: docker.artifactory.bank.onefiserv.net/ecom-ach-api:1.0.0-20210226103300
+    targetImage: registry.fiservapps.com/ufs/abiliti/ecom-ach-api:1.0.0-20210226103300
