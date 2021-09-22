@@ -1,5 +1,9 @@
 node {
   sh "git --version"
-  def datas = readYaml file: '/deploy.yml', text: "something: 'Override'"
-        assert datas.something == 'Override'
+  data = readYaml file: "Jenkins/config.yml
+  scan_path = data[scan_path]
+  scan_path.each { e ->
+                echo "Translating ${e.getAt('application')} application 
+${e.getAt('path')}"
+}
 }
