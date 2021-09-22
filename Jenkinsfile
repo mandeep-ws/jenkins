@@ -11,6 +11,7 @@ node {
           echo " docker tag ${e.getAt('sourceImage')} ${e.getAt('targetImage')}"
           echo " docker login atifactory2"
           echo " docker push ${e.getAt('targetImage')}"
+      ```
     }
   }
 }
